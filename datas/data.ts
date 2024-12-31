@@ -1,4 +1,3 @@
-import { FaLinkedin } from "react-icons/fa";
 export const socialLinks = [
   {
     name: "Github",
