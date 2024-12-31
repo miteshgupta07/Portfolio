@@ -15,11 +15,11 @@ export const socialLinks = [
     simpleIcon: "https://cdn.simpleicons.org/x",
   },
 
-  {
-    name: "Medium",
-    link: "https://medium.com/@mitesh_gupta",
-    simpleIcon: "https://cdn.simpleicons.org/medium",
-  },
+  // {
+  //   name: "Medium",
+  //   link: "https://medium.com/@mitesh_gupta",
+  //   simpleIcon: "https://cdn.simpleicons.org/medium",
+  // },
   {
     name: "Instagram",
     link: "https://www.instagram.com/mg_mitesh_gupta",
