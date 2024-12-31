@@ -1,3 +1,4 @@
+import { FaLinkedin } from "react-icons/fa";
 export const socialLinks = [
   {
     name: "Github",
@@ -7,7 +8,7 @@ export const socialLinks = [
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/mitesh-gupta",
-    simpleIcon: "https://cdn.simpleicons.org/linkedin",
+    simpleIcon: "https://cdn.simpleicons.org/logmein",
   },
   {
     name: "X",
@@ -15,6 +16,11 @@ export const socialLinks = [
     simpleIcon: "https://cdn.simpleicons.org/x",
   },
 
+  {
+    name: "Medium",
+    link: "https://medium.com/@mitesh_gupta",
+    simpleIcon: "https://cdn.simpleicons.org/medium",
+  },
   {
     name: "Instagram",
     link: "https://www.instagram.com/mg_mitesh_gupta",

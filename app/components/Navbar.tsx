@@ -30,7 +30,6 @@ const Navbar = () => {
         <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold font-grotesk">
           
         Gupta
-        {/* <ThemeSwitcher />  */}
         </p>
       </Link>
       <div className="hidden md:flex items-center gap-2  font-grotesk uppercase">
@@ -113,7 +112,6 @@ const Navbar = () => {
                 <HiDocumentText size={25} />
               </Link>
             </Button>
-            <ThemeSwitcher />
           </nav>
         </motion.div>
       </motion.div>
