@@ -99,6 +99,15 @@ export const companiesInfo = [
 
 export const projects = [
   {
+    name: "ResearchMate",
+    type: "Personal Project",
+    description:"Research Mate is an open-source AI tool designed to streamline academic and research workflows. It leverages advanced generative AI with Retrieval-Augmented Generation (RAG) and intelligent agents to offer powerful features",
+    image: "/ResearchMate.png",
+    liveLink: "https://researchmate-chatbot.streamlit.app/",
+    stacks: ["FAISS", "Python", "Streamlit", "Langchain"],
+  },
+
+  {
     name: "SketchGen",
     type: "Personal Project",
     description:"SketchGen is an Image-to-Image Translation tool that transforms hand-drawn sketches and prompts into realistic images using a pre-trained Stable Diffusion model.",
