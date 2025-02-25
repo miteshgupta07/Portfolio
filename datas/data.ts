@@ -70,11 +70,22 @@ export const sections = [
 ];
 
 export const companies = [
+  "Dataminds Labs",
   "Pantech Prolabs",
   "Pantech Solutions",
 ];
 
 export const companiesInfo = [
+  {
+    title: "Data Science Intern",
+    company: "Dataminds Labs",
+    location: "IND (remote)",
+    duration: "January 2025 - Present",
+    roles: [
+      "Developing waterborne disease prediction models using machine learning algorithms.",
+      "Achieved 0.7 error rate prediction.",
+    ],
+  },
   {
     title: "Artificial Intelligence Intern",
     company: "Pantech Prolabs",
