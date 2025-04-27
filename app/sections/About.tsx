@@ -10,7 +10,7 @@ const About = () => {
       <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-bold">
         <div className="w-[5%%] lg:hidden lg:w-36 border-b-[1px] border-b-border-color"></div>
         <span className=" font-bold text-lg sm:text-2xl font-idgrotesk">
-          01. About Me
+          About Me
         </span>
         <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
       </div>
