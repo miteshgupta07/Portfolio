@@ -78,9 +78,9 @@ export const companies = [
 export const companiesInfo = [
   {
     title: "Data Science Intern",
-    company: "Dataminds Labs",
+    company: "DataMinds Labs",
     location: "IND (remote)",
-    duration: "January 2025 - Present",
+    duration: "January 2025 - March 2025",
     roles: [
       "Developing waterborne disease prediction models using machine learning algorithms.",
       "Achieved 0.7 error rate prediction.",
