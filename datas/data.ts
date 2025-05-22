@@ -10,6 +10,16 @@ export const socialLinks = [
     simpleIcon: "https://cdn.simpleicons.org/logmein",
   },
   {
+    name: "Upwork",
+    link: "https://www.upwork.com/freelancers/~0159c66ea60d0cb067?mp_source=share",
+    simpleIcon: "https://cdn.simpleicons.org/upwork",
+  },
+  {
+    name: "Fiverr",
+    link: "https://www.fiverr.com/s/pd445jZ",
+    simpleIcon: "https://cdn.simpleicons.org/fiverr",
+  },
+  {
     name: "X",
     link: "https://x.com/mg_mitesh",
     simpleIcon: "https://cdn.simpleicons.org/x",
@@ -25,6 +35,7 @@ export const socialLinks = [
     link: "https://www.instagram.com/mg_mitesh_gupta",
     simpleIcon: "https://cdn.simpleicons.org/instagram",
   },
+
 ];
 
 export const technologies = [
