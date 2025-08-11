@@ -88,19 +88,31 @@ export const companies = [
 
 export const companiesInfo = [
   {
+    title: "AI Engineer",
+    company: "Vaultpay Solutions",
+    location: "On-site, Ludhiana, India",
+    duration: "April 2025 - Present",
+    roles: [
+      "Dynamic Surge Pricing Model: Developed and deployed a ML based dynamic surge pricing engine using FastAPI that integrates real-time weather, traffic, and demand data to optimize ride fares, resulting in significant revenue growth during peak periods.",
+      "Multilingual Customer Support Chatbot: Built an LLM-powered chatbot supporting 10+ Indian languages, integrated with Firebase Firestore, and secured with prompt injection defenses — cutting first-response time to <5 s and removing manual query handling.",
+      "Ride Demand Prediction System: Built and deployed a two-stage ML pipeline (classification + regression) to forecast high-demand areas in Ludhiana, enabling driver app heatmaps, helped drivers find more rides in high-demand zones.",
+      "Document Verification Model: Created a computer vision and OCR–powered KYC verification system capable of extracting and cross-validating details from multiple document types, reducing onboarding time by ~70% and eliminating most manual work."
+    ],
+  },
+  {
     title: "Data Science Intern",
     company: "DataMinds Labs",
-    location: "IND (remote)",
+    location: "India (remote)",
     duration: "January 2025 - March 2025",
     roles: [
-      "Developing waterborne disease prediction models using machine learning algorithms.",
-      "Achieved 0.7 error rate prediction.",
+      "Developed waterborne disease prediction models using machine learning algorithms.",
+      "Achieved a Mean Absolute Error (MAE) of 0.53, demonstrating high model accuracy.",
     ],
   },
   {
     title: "Artificial Intelligence Intern",
     company: "Pantech Prolabs",
-    location: "IND (remote)",
+    location: "India (remote)",
     duration: "July 2022 - August 2022",
     roles: [
       "Developed a chatbot for handling common queries using rule-based algorithms and NLP techniques.",
@@ -110,7 +122,7 @@ export const companiesInfo = [
   {
     title: "Machine Learning Intern",
     company: "Pantech Solutions",
-    location: "IND (Remote)",
+    location: "India (Remote)",
     duration: "June 2022 - July 2022",
     roles: [
       "Designed a fraud detection model for online transactions using supervised learning algorithms.",
