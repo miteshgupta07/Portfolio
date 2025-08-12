@@ -81,6 +81,7 @@ export const sections = [
 ];
 
 export const companies = [
+  "Vaultpay Solutions",
   "Dataminds Labs",
   "Pantech Prolabs",
   "Pantech Solutions",
@@ -89,19 +90,22 @@ export const companies = [
 export const companiesInfo = [
   {
     title: "AI Engineer",
-    company: "Vaultpay Solutions",
+    company: "Vaultpay Solutions Pvt. Ltd. (MyRidez)",
+    short_desc: "Worked on AI/ML solutions for the company’s ride-hailing platform — MyRidez",
     location: "On-site, Ludhiana, India",
     duration: "April 2025 - Present",
     roles: [
-      "Dynamic Surge Pricing Model: Developed and deployed a ML based dynamic surge pricing engine using FastAPI that integrates real-time weather, traffic, and demand data to optimize ride fares, resulting in significant revenue growth during peak periods.",
-      "Multilingual Customer Support Chatbot: Built an LLM-powered chatbot supporting 10+ Indian languages, integrated with Firebase Firestore, and secured with prompt injection defenses — cutting first-response time to <5 s and removing manual query handling.",
-      "Ride Demand Prediction System: Built and deployed a two-stage ML pipeline (classification + regression) to forecast high-demand areas in Ludhiana, enabling driver app heatmaps, helped drivers find more rides in high-demand zones.",
-      "Document Verification Model: Created a computer vision and OCR–powered KYC verification system capable of extracting and cross-validating details from multiple document types, reducing onboarding time by ~70% and eliminating most manual work."
-    ],
+    "Dynamic Surge Pricing Model: Built & deployed ML-based pricing engine (FastAPI) using real-time weather, traffic & demand data; boosted peak-period revenue.",
+    "Multilingual Customer Support Chatbot: Developed LLM-powered support bot for 10+ Indian languages (Firestore integration, prompt-injection safe); cut first-response time to <5 s and removed manual query handling.",
+    "Ride Demand Prediction System: Designed two-stage ML pipeline to forecast high-demand zones in Ludhiana; powered driver heatmaps & increased rides in busy areas.",
+    "Document Verification Model: Created CV+OCR KYC system for multiple document types; reduced onboarding time by ~70% and minimized manual work."
+  ],
+
   },
   {
     title: "Data Science Intern",
     company: "DataMinds Labs",
+    short_desc:"",
     location: "India (remote)",
     duration: "January 2025 - March 2025",
     roles: [
@@ -112,6 +116,7 @@ export const companiesInfo = [
   {
     title: "Artificial Intelligence Intern",
     company: "Pantech Prolabs",
+    short_desc:"",
     location: "India (remote)",
     duration: "July 2022 - August 2022",
     roles: [
@@ -122,6 +127,7 @@ export const companiesInfo = [
   {
     title: "Machine Learning Intern",
     company: "Pantech Solutions",
+    short_desc:"",
     location: "India (Remote)",
     duration: "June 2022 - July 2022",
     roles: [

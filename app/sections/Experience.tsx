@@ -120,6 +120,9 @@ const Experience = () => {
                   {companiesInfo[tab].company}
                 </span>
               </h3>
+              <p className="text-base text-secondary-color-3">
+                {companiesInfo[tab].short_desc}
+              </p>
               <p className="text-base text-gray-500 mt-2 font-idgrotesk">
                 {companiesInfo[tab].location}
               </p>
@@ -132,7 +135,7 @@ const Experience = () => {
                     size={40}
                     className="text-secondary-color-3"
                   />
-                  <p className="text-base">{role}</p>
+                  <p className="text-base text-justify">{role}</p>
                 </div>
               ))}
             </motion.div>
