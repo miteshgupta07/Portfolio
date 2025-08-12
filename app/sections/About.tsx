@@ -36,7 +36,7 @@ const About = () => {
         </div>
         <div className="w-full lg:w-[50%] order-1 lg:order-2">
           <article className="text-justify">
-            Hi, I am Mitesh Gupta, an experienced AI Developer and Data Scientist
+            Hi, I am Mitesh Gupta, an experienced AI Engineer and Data Scientist
             with a proven track record of delivering innovative solutions across more 
             than 25 projects. I specialize in building AI-driven applications that 
             transform complex data into impactful insights. My work spans natural 

@@ -21,7 +21,7 @@ const Header = () => {
             variant={"secondary"}
             className=" font-grotesk text-bases sm:text-xl"
           >
-          An AI Developer and Data Scientist
+          An AI Engineer and Data Scientist
           </Badge>
           <p className="mt-2 ">
           I specialize in building intelligent applications using Python, TensorFlow, and PyTorch, transforming complex data into innovative AI-driven solutions.
