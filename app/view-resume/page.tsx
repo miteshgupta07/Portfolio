@@ -109,21 +109,6 @@ export default function ViewResume() {
               </div>
             </div>
           </div>
-
-          {/* Alternative download section */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 text-center">
-            <h3 className="text-lg font-semibold mb-2 dark:text-gray-200">Can't view the resume?</h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              If the preview above doesn't work, you can download the PDF directly.
-            </p>
-            <button
-              onClick={handleDownload}
-              className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium mx-auto"
-            >
-              <IoMdDownload size={20} />
-              Download PDF Resume
-            </button>
-          </div>
         </>
       )}
     </div>
