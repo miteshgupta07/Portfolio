@@ -50,10 +50,8 @@ const Navbar = () => {
             <li className="hidden lg:inline-block">
               <Button asChild variant={"outline"}>
                 <Link
-                  href="https://docs.google.com/document/d/1VRkmw1SWehhPDYTtabuwdZ9LACf9qs1joiY5wwh6bZg/view"
+                  href="/view-resume"
                   className=" border-[1px] border-black"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   View Resume
                   <HiDocumentText size={25} className="ml-2" />
@@ -102,10 +100,8 @@ const Navbar = () => {
             ))}
             <Button asChild variant={"outline"}>
               <Link
-                href="https://drive.google.com/file/d/1EV4ieaNXSr_CX9g-MT2Hih0bVLdsqHF-/view?usp=sharing"
+                href="/view-resume"
                 className=""
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={toggleMenu}
               >
                 View Resume
