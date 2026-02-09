@@ -40,15 +40,31 @@ export const socialLinks = [
 
 export const technologies = [
   {
+    name: "AWS",
+    iconLink: "https://cdn.simpleicons.org/python",
+  },
+  {
+    name: "FastAPI",
+    iconLink: "https://cdn.simpleicons.org/fastapi",
+  },
+  {
+    name: "LangChain",
+    iconLink: "https://cdn.simpleicons.org/langchain/green",
+  },
+  {
     name: "Python",
     iconLink: "https://cdn.simpleicons.org/python",
   },
   {
-    name: "LangChain",
-    iconLink: "https://cdn.simpleicons.org/langchain",
+    name: "Docker",
+    iconLink: "https://cdn.simpleicons.org/docker",
   },
   {
-    name: "Hugging Face",
+    name: "Streamlit",
+    iconLink: "https://cdn.simpleicons.org/streamlit",
+  },
+  {
+    name: "Hugging-Face",
     iconLink: "https://cdn.simpleicons.org/huggingface",
   },
   {
@@ -56,22 +72,22 @@ export const technologies = [
     iconLink: "https://cdn.simpleicons.org/mysql",
   },
   {
-    name: "Git",
-    iconLink: "https://cdn.simpleicons.org/git",
-  },  
-
+    name: "MLFlow",
+    iconLink: "https://cdn.simpleicons.org/python",
+  },
   {
     name: "PyTorch",
     iconLink: "https://cdn.simpleicons.org/pytorch",
   },
   {
-    name: "Streamlit",
-    iconLink: "https://cdn.simpleicons.org/streamlit",
-  },
-  {
     name: "Tensorflow",
     iconLink: "https://cdn.simpleicons.org/tensorflow",
   },
+  {
+    name: "Git",
+    iconLink: "https://cdn.simpleicons.org/git",
+  },
+
 ];
 
 export const sections = [

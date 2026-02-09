@@ -19,6 +19,7 @@ const About = () => {
           <h1 className="font-bold ">Core AI & Engineering Skills</h1>
           <div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
             <ul className="px-8 py-8 flex flex-row  h-auto sm:flex-col gap-4 sm:h-80 lg:gap-2 lg:h-72  flex-wrap w-full font-idgrotesk">
+
               {technologies.map((tech) => (
                 <li className="flex filter grayscale hover:grayscale-0  items-center cursor-pointer gap-5 transition-all duration-300 dark:filter dark:brightness-50 dark:invert hover:dark:brightness-100 hover:dark:invert-0">
                   <img
