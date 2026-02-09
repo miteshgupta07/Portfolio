@@ -32,7 +32,7 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={"mailto:miteshgupta2711@gmail.com"}
-            className="flex items-center border-[#FFD700] dark:border-[#FFD700] justify-center gap-3 px-10 py-6  font-bold w-max dark:hover:bg-[#FFD700] border-[4px]  mt-5 "
+            className="flex items-center !border-[#FFD700] justify-center gap-3 px-10 py-6  font-bold text-[16Gitpx] w-max hover:!bg-[#FFD700] hover:!text-[#121212] border-[4px]  mt-5 "
           >
             Get in Touch
             <Image

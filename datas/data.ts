@@ -54,11 +54,12 @@ export const technologies = [
   {
     name: "MySQL",
     iconLink: "https://cdn.simpleicons.org/mysql",
-  },  
-  {
-    name: "Tensorflow",
-    iconLink: "https://cdn.simpleicons.org/tensorflow",
   },
+  {
+    name: "Git",
+    iconLink: "https://cdn.simpleicons.org/git",
+  },  
+
   {
     name: "PyTorch",
     iconLink: "https://cdn.simpleicons.org/pytorch",
@@ -68,8 +69,8 @@ export const technologies = [
     iconLink: "https://cdn.simpleicons.org/streamlit",
   },
   {
-    name: "Git",
-    iconLink: "https://cdn.simpleicons.org/git",
+    name: "Tensorflow",
+    iconLink: "https://cdn.simpleicons.org/tensorflow",
   },
 ];
 
