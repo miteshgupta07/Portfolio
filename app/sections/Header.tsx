@@ -18,11 +18,11 @@ const Header = () => {
         </div>
         <div className="relative">
           <Badge
-            variant={"secondary"}
-            className=" font-grotesk text-bases sm:text-xl"
-          >
+          variant={"secondary"}
+          className="font-grotesk text-bases sm:text-xl hover:!bg-[#FFD700] hover:!text-[#121212]"
+            >
           AI Engineer
-          </Badge>
+        </Badge>
           <p className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl">
             I build and deploy end-to-end intelligent AI systems that solve real-world problems using machine learning and generative AI.
           </p>
