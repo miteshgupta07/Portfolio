@@ -41,7 +41,7 @@ export const socialLinks = [
 export const technologies = [
   {
     name: "AWS",
-    iconLink: "https://cdn.simpleicons.org/python",
+    iconLink: "svgs/amazon-aws.svg",
   },
   {
     name: "FastAPI",
@@ -73,7 +73,7 @@ export const technologies = [
   },
   {
     name: "MLFlow",
-    iconLink: "https://cdn.simpleicons.org/python",
+    iconLink: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ml-flow-wordmark-dark.svg",
   },
   {
     name: "PyTorch",
