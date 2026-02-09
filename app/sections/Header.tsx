@@ -21,10 +21,10 @@ const Header = () => {
             variant={"secondary"}
             className=" font-grotesk text-bases sm:text-xl"
           >
-          An AI Engineer and Data Scientist
+          AI Engineer
           </Badge>
-          <p className="mt-2 ">
-          I specialize in building intelligent applications using Python, TensorFlow, and PyTorch, transforming complex data into innovative AI-driven solutions.
+          <p className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl">
+            I build and deploy end-to-end intelligent AI systems that solve real-world problems using machine learning and generative AI.
           </p>
         </div>
         <Button asChild variant={"outline"}>
