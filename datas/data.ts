@@ -2,12 +2,12 @@ export const socialLinks = [
   {
     name: "Github",
     link: "https://github.com/miteshgupta07",
-    simpleIcon: "https://cdn.simpleicons.org/github",
+    simpleIcon: "https://cdn.simpleicons.org/github/white",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/mitesh-gupta",
-    simpleIcon: "https://cdn.simpleicons.org/logmein",
+    simpleIcon: "/svgs/linkedin.svg",
   },
   {
     name: "Upwork",
@@ -22,17 +22,17 @@ export const socialLinks = [
   {
     name: "X",
     link: "https://x.com/mg_mitesh",
-    simpleIcon: "https://cdn.simpleicons.org/x",
+    simpleIcon: "https://cdn.simpleicons.org/x/white",
   },
 
   {
     name: "Medium",
     link: "https://medium.com/@mitesh_gupta",
-    simpleIcon: "https://cdn.simpleicons.org/medium",
+    simpleIcon: "https://cdn.simpleicons.org/medium/white",
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/mg_mitesh_gupta",
+    link: "https://www.instagram.com/miitesh_gupta",
     simpleIcon: "https://cdn.simpleicons.org/instagram",
   },
 

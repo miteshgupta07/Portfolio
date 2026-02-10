@@ -32,14 +32,14 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={"mailto:miteshgupta2711@gmail.com"}
-            className="flex items-center !border-[#FFD700] justify-center gap-3 px-10 py-6  font-bold text-[1.1rem] w-max hover:!bg-[#FFD700] hover:!text-[#121212] border-[4px]  mt-5 "
+            className="flex items-center !border-[#FFD700] justify-center gap-3 px-10 py-6  font-bold text-[1.15rem] w-max hover:!bg-[#FFD700] hover:!text-[#121212] border-[4px]  mt-5 "
           >
             Get in Touch
             <Image
               alt="message"
               src={"/svgs/message-programming.svg"}
-              width={25}
-              height={25}
+              width={30}
+              height={30}
             />
           </Link>
         </Button>

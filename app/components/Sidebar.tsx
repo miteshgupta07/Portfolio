@@ -21,8 +21,8 @@ const Sidebar = () => {
               <img
                 src={socialLink.simpleIcon}
                 alt={socialLink.name}
-                height={30}
-                width={30}
+                height={35}
+                width={35}
                 className="transition-all duration-300 filter grayscale dark:grayscale-0 hover:grayscale-0 dark:filter dark:brightness-0 dark:invert hover:dark:brightness-100 hover:dark:invert-0"
               />
             </Link>
