@@ -13,14 +13,14 @@ const Works = () => {
       <header className="flex flex-row gap-4  justify-start lg:justify-end items-center font-b">
         <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-bold">
           <span className=" font-bold text-lg sm:text-2xl font-idgrotesk">
-            Things I've Built
+            Projects
           </span>
           <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
         </div>
       </header>
       <div className="flex flex-col gap-24 mt-10">
         {projects
-          .slice(0, 5)
+          .slice(0, 4)
           .map(
             (project, id) =>
               project && (
@@ -42,7 +42,7 @@ const Works = () => {
               href={"/works"}
               className=" flex font-bold border-b border-transparent  transition-all "
             >
-              <span className="">View More Projects</span>
+              <span className="text-xl">View All Projects</span>
 
               <span>
                 <IoArrowForward size={20} className=" text-secondary-color-3" />

@@ -126,8 +126,7 @@ export const companiesInfo = [
     location: "India (remote)",
     duration: "January 2025 - March 2025",
     roles: [
-      "Developed waterborne disease prediction models using machine learning algorithms.",
-      "Achieved a Mean Absolute Error (MAE) of 0.53, demonstrating high model accuracy.",
+      "Waterborne Disease Prediction: Built machine learning models to forecast disease outbreaks; achieved a Mean Absolute Error (MAE) of 0.53",
     ],
   },
   {
@@ -137,8 +136,7 @@ export const companiesInfo = [
     location: "India (remote)",
     duration: "July 2022 - August 2022",
     roles: [
-      "Developed a chatbot for handling common queries using rule-based algorithms and NLP techniques.",
-      "Achieved 85% query resolution rate in testing.",
+      "Query Handling Chatbot: Developed a rule-based NLP chatbot to handle common user queries; achieved an 85% query resolution rate during testing.",
     ],
   },
   {
@@ -148,22 +146,52 @@ export const companiesInfo = [
     location: "India (Remote)",
     duration: "June 2022 - July 2022",
     roles: [
-      "Designed a fraud detection model for online transactions using supervised learning algorithms.",
-      "Detected fraudulent activities with precision 92%.",
+      "Fraud Detection System: Designed a supervised learning model for online transaction fraud detection; reached 92% precision in identifying fraudulent activity."
     ],
   },
 ];
 
 export const projects = [
   {
-    name: "ResearchMate",
-    type: "Personal Project",
-    description:"Research Mate is an open-source AI tool designed to streamline academic and research workflows. It leverages advanced generative AI with Retrieval-Augmented Generation (RAG) and intelligent agents to offer powerful features",
-    image: "/ResearchMate.png",
-    liveLink: "https://researchmate-chatbot.streamlit.app/",
-    stacks: ["FAISS", "Python", "Streamlit", "Langchain"],
+    name: "MyRidez AI Solutions",
+    type: "Industry Project",
+    description: "Worked on production AI systems at MyRidez, including surge pricing optimization, multilingual customer support automation, demand forecasting, and OCR-based document verification, improving revenue efficiency, response times, and onboarding workflows at scale.",
+    image: "/myridez.webp",
+    liveLink: "https://play.google.com/store/apps/details?id=com.myridez.usersappps&pcampaignid=web_share",
+    stacks: [
+      "AWS",
+      "FastAPI",
+      "Firebase",
+      "OCR",
+      "ML",
+      "Computer-Vision",
+    ],
   },
 
+  {
+    name: "ResearchMate",
+    type: "Personal Project",
+    description:"ResearchMate is an open-source, production-ready AI research assistant for document-grounded question answering. It combines a FastAPI backend, evaluated Retrieval-Augmented Generation (RAG), and optional agent workflows to deliver accurate, reliable, and transparent responses over research documents.",
+    image: "/ResearchMate.png",
+    liveLink: "https://researchmate.me/",
+    stacks: ["AWS", "Langchain", "Streamlit", "FastAPI","FAISS"],
+  },
+  {
+    name: "Plant Guard",
+    type: "Featured Project",
+    description:"Plant Guard is a smart plant disease detection tool that uses image recognition to identify plant diseases and suggest treatments, helping gardeners and farmers keep their plants healthy.",
+    image: "/PlantGuard.png",
+    liveLink: "https://plant-guard.streamlit.app/",
+    stacks: ["Tensorflow","Computer-Vision", "Streamlit", "Python"],
+  },
+  {
+    name: "Automatic License Plate Detection",
+    type: "Personal Project",
+    description:"An automatic license plate recognition system that uses computer vision to detect and read vehicle license plates, providing automated vehicle identification for access control, parking management, and security applications.",
+    image: "/ALPR.png",
+    liveLink: "https://github.com/miteshgupta07/Automatic-License-Plate-Recognition-System",
+    stacks: ["Computer-Vision", "OCR", "Python"],
+  },
   {
     name: "SketchGen",
     type: "Personal Project",
@@ -180,23 +208,7 @@ export const projects = [
     liveLink: "https://intellichat-chatbot.streamlit.app/",
     stacks: ["Groq", "LangChain", "Python", "Streamlit"],
   },
-  {
-    name: "Plant Guard",
-    type: "Featured Project",
-    description:"Plant Guard is a smart plant disease detection tool that uses image recognition to identify plant diseases and suggest treatments, helping gardeners and farmers keep their plants healthy.",
-    image: "/PlantGuard.png",
-    liveLink: "https://plant-guard.streamlit.app/",
-    stacks: ["Tensorflow","Computer-Vision", "Streamlit", "Python"],
-  },
 
-  {
-    name: "Automatic License Plate Detection",
-    type: "Personal Project",
-    description:"An automatic license plate recognition system that uses computer vision to detect and read vehicle license plates, providing automated vehicle identification for access control, parking management, and security applications.",
-    image: "/ALPR.png",
-    liveLink: "https://github.com/miteshgupta07/Automatic-License-Plate-Recognition-System",
-    stacks: ["Computer-Vision", "OCR", "Python"],
-  },
   {
     name: "Sentiment Analysis",
     type: "Personal Project",
@@ -205,14 +217,7 @@ export const projects = [
     liveLink: "https://github.com/miteshgupta07/Sentiment-Analysis-Using-CNN-and-LSTM",
     stacks: ["NLP", "Deep-Learning", "Python"],
   },
-  {
-    name: "Covid-19 Dashboard",
-    type: "Personal Project",
-    description:"A Streamlit dashboard for COVID-19 reporting that provides real-time updates, visualizations, and analysis of global and local COVID-19 data to track the pandemic's progress and impact.",
-    image: "/Covid.png",
-    liveLink:"https://covid-19-report-dashboard.streamlit.app/",
-    stacks: ["Streamlit", "Python", "Pandas"],
-  },
+
   {
     name: "CaptImage",
     type: "Personal Project",
@@ -229,5 +234,12 @@ export const projects = [
     liveLink: "https://github.com/miteshgupta07/ATS-Scoring-System",
     stacks: ["NLP", "Spacy", "Python"],
   },
-  ,
+  {
+    name: "Covid-19 Dashboard",
+    type: "Personal Project",
+    description:"A Streamlit dashboard for COVID-19 reporting that provides real-time updates, visualizations, and analysis of global and local COVID-19 data to track the pandemic's progress and impact.",
+    image: "/Covid.png",
+    liveLink:"https://covid-19-report-dashboard.streamlit.app/",
+    stacks: ["Streamlit", "Python", "Pandas"],
+  }
 ];
