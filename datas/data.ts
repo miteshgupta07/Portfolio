@@ -110,12 +110,12 @@ export const companiesInfo = [
     company: "Vaultpay Solutions Pvt. Ltd. (MyRidez)",
     short_desc: "Worked on AI/ML solutions for the company’s ride-hailing platform — MyRidez",
     location: "On-site, Ludhiana, India",
-    duration: "April 2025 - Present",
+    duration: "March 2025 - Present",
     roles: [
-    "Dynamic Surge Pricing Model: Built & deployed ML-based pricing engine (FastAPI) using real-time weather, traffic & demand data; boosted peak-period revenue.",
-    "Multilingual Customer Support Chatbot: Developed LLM-powered support bot for 10+ Indian languages (Firestore integration, prompt-injection safe); cut first-response time to <5 s and removed manual query handling.",
-    "Ride Demand Prediction System: Designed two-stage ML pipeline to forecast high-demand zones in Ludhiana; powered driver heatmaps & increased rides in busy areas.",
-    "Document Verification Model: Created CV+OCR KYC system for multiple document types; reduced onboarding time by ~70% and minimized manual work."
+    "Dynamic Surge Pricing Model: Built and deployed a FastAPI-based ML pricing engine using real-time weather, traffic, and demand data; increased peak-period revenue by 23%.",
+    "Multilingual Customer Support Chatbot: Developed an LLM-powered chatbot supporting 10+ Indian languages with Firestore integration and prompt-injection safeguards; reduced first-response time to under 5 seconds",
+    "Document Verification System: Built a computer vision and OCR-based KYC solution for multiple document types; reduced onboarding time by ~70% and significantly minimized manual verification.",
+    "Ride Demand Prediction System: Designed a two-stage ML pipeline to identify high-demand zones in Ludhiana, enabling driver heatmaps and improving ride availability in peak areas."
   ],
 
   },

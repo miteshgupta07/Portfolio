@@ -79,7 +79,7 @@ const Experience = () => {
     >
       <header className="flex flex-row gap-4 justify-start items-center font-bold">
         <span className="font-bold text-lg sm:text-2xl font-idgrotesk">
-          Where I've worked
+          Professional Experience
         </span>
         <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
       </header>
@@ -129,15 +129,24 @@ const Experience = () => {
               <h3 className="mt-2 text-gray-500 font-idgrotesk">
                 {companiesInfo[tab].duration}
               </h3>
-              {companiesInfo[tab].roles.map((role) => (
-                <div key={role} className="flex justify-start mt-2">
-                  <RiArrowDropRightFill
-                    size={40}
-                    className="text-secondary-color-3"
-                  />
-                  <p className="text-base text-justify">{role}</p>
-                </div>
-              ))}
+                {companiesInfo[tab].roles.map((role, index) => {
+                  const [title, ...rest] = role.split(":");
+                  const description = rest.join(":");
+
+                  return (
+                    <div key={index} className="flex justify-start mt-2">
+                      <RiArrowDropRightFill
+                        size={40}
+                        className="text-secondary-color-3"
+                      />
+                      <p className="text-base text-justify">
+                        <span className="font-semibold">{title}:</span>
+                        {description}
+                      </p>
+                    </div>
+                  );
+                })}
+
             </motion.div>
           </AnimatePresence>
         </div>

@@ -37,18 +37,20 @@ const About = () => {
         </div>
         <div className="w-full lg:w-[50%] order-1 lg:order-2">
           <article className="text-justify">
-            Hi, I am Mitesh Gupta, an experienced AI Engineer and Data Scientist
-            with a proven track record of delivering innovative solutions across more 
-            than 25 projects. I specialize in building AI-driven applications that 
-            transform complex data into impactful insights. My work spans natural 
-            language processing, computer vision, and predictive analytics, enabling 
-            organizations to leverage the power of artificial intelligence effectively.
+            I am an AI Engineer with one year of hands-on industry experience, 
+            building and deploying real-world AI systems in production environments. 
+            I have worked on multiple projects within a professional setting, 
+            contributing to end-to-end machine learning and generative AI solutions.
             <br />
             <br />
-            I have worked on numerous projects independently, focusing on areas such as 
-            Generative AI, Data Science, and Automation. Passionate about continuous 
-            learning, I stay updated on the latest technological advancements in AI and 
-            machine learning, applying them to solve real-world challenges.
+            My work spans generative AI, machine learning, deep learning, natural 
+            language processing, and computer vision, with a strong focus on solving 
+            practical business problems. I have experience taking models from 
+            experimentation to deployment, working closely with data, APIs, and scalable systems.
+            <br />
+            <br />
+            I enjoy working on complex problems, building reliable AI solutions, and 
+            continuously improving systems based on real usage and feedback.
           </article>
         </div>
       </div>
