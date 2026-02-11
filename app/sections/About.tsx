@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className="flex flex-col  lg:flex-row w-full py-10  gap-10">
         <div className="w-full lg:w-[50%] flex flex-col gap-2 order-2 lg:order-1">
-          <h1 className="font-bold ">Core AI & Engineering Skills</h1>
+          <h1 className="font-bold text-2xl">Core AI & Engineering Skills</h1>
           <div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
             <ul className="px-8 py-8 flex flex-row  h-auto sm:flex-col gap-4 sm:h-80 lg:gap-2 lg:h-72  flex-wrap w-full font-idgrotesk">
 
