@@ -85,13 +85,14 @@ const About = () => {
         <div className="flex flex-col lg:flex-row w-full py-10 gap-10 lg:items-start">
           {/* Chatbot UI - visible on all screen sizes */}
           {/* Mobile: full width, normal margin | Desktop (lg+): half width with upward lift via lg:-mt-44 */}
-          <div className="flex w-full lg:w-1/2 mt-6 lg:-mt-44 justify-center lg:justify-start items-start">
+          <div className={`flex w-full lg:w-1/2 mt-6 lg:-mt-44 lg:min-h-[600px] ${isChatOpen ? 'lg:justify-start lg:items-start' : 'lg:justify-center lg:items-center'} justify-center items-start`}>
+
             {!isChatOpen ? (
               /* Collapsed state - Beautiful animated trigger button */
               /* Slow breathing animation (3s) for calm, premium feel - replaces fast animate-pulse */
               <button
                 onClick={() => setIsChatOpen(true)}
-                className="group relative px-8 py-4 bg-gradient-to-br from-[#ffd700] to-[#ffd700] rounded-full shadow-2xl shadow-[#ffd700] hover:shadow-[#ffd700] transition-all duration-1 hover:scale-110 active:scale-95 animate-[pulse_1s_ease-in-out_infinite] hover:animate-none"
+                className="group relative px-8 py-4 bg-gradient-to-br from-[#ffd700] to-[#ffd700] rounded-full shadow-2xl shadow-[#ffd700] hover:shadow-[#ffd700] transition-all duration-1 hover:scale-110 active:scale-95 animate-[pulse_2s_ease-in-out_infinite] hover:animate-none"
               >
                 {/* Animated glow effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#ffd700] to-[#ffd700] blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>

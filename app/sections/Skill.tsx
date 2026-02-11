@@ -7,13 +7,17 @@ const Skill = () => {
       id="skills"
       data-aos="fade-up"
     >
-      <header className="flex flex-row gap-4 justify-start items-center font-bold">
-        <span className="font-bold text-lg sm:text-2xl font-idgrotesk">
-          My Tech Stack 
-        </span>
-        <div className="w-[5%] lg:w-36 border-b-[1px] border-b-[#ffd700]"></div>
+<header className="flex items-center justify-center gap-4 font-bold">
+  <div className="w-10 sm:w-64 border-b border-[#ffd700]"></div>
 
-      </header>
+  <span className="text-lg sm:text-2xl font-idgrotesk whitespace-nowrap">
+    Skills & Tech Stack
+  </span>
+
+  <div className="w-10 sm:w-64 border-b border-[#ffd700]"></div>
+</header>
+
+
 
       <div className="py-10">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
