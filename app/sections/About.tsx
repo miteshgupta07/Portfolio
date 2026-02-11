@@ -14,7 +14,10 @@ const About = () => {
           <div className="w-[5%] lg:w-36 border-b-[1px] border-b-[#ffd700]"></div>
         </div>
         <div className="flex flex-col lg:flex-row w-full py-10 gap-10">
-          <div className="w-full">
+          {/* Left half - empty spacing on large screens */}
+          <div className="hidden lg:block lg:w-1/2"></div>
+          {/* Right half - contains article text */}
+          <div className="w-full lg:w-1/2">
             <article className="text-justify">
               I am an AI Engineer with one year of hands-on industry experience, 
               building and deploying real-world AI systems in production environments. 
