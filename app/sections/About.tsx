@@ -200,19 +200,34 @@ const About = () => {
                       onSubmit={handleSubmit}
                       className="px-6 py-5 bg-[#1a1a1a]/50 backdrop-blur-sm border-t border-[#ffd700]/20"
                     >
-                      <div className="flex gap-3">
+                      <div className="relative">
                         <input
                           type="text"
                           value={input}
                           onChange={(e) => setInput(e.target.value)}
                           placeholder="Type your message..."
-                          className="flex-1 bg-gradient-to-br from-[#262626] to-[#1a1a1a] text-[#ffffff] rounded-2xl px-5 py-3.5 outline-none focus:ring-2 focus:ring-[#ffd700] focus:shadow-lg focus:shadow-[#ffd700]/30 placeholder-[#ffffff] placeholder-opacity-40 transition-all duration-300 border border-[#ffffff]/5"
+                          className="w-full bg-gradient-to-br from-[#262626] to-[#1a1a1a] text-[#ffffff] rounded-2xl px-5 py-3.5 pr-12 outline-none focus:ring-2 focus:ring-[#ffd700] focus:shadow-lg focus:shadow-[#ffd700]/30 placeholder-[#ffffff] placeholder-opacity-40 transition-all duration-300 border border-[#ffffff]/5"
                         />
                         <button
                           type="submit"
-                          className="bg-gradient-to-br from-[#ffd700] to-[#ffed4e] hover:from-[#ffed4e] hover:to-[#ffd700] text-[#121212] font-bold rounded-2xl px-8 py-3.5 transition-all duration-300 hover:shadow-2xl hover:shadow-[#ffd700]/60 hover:scale-105 active:scale-95 flex-shrink-0"
+                          disabled={!input.trim()}
+                          aria-label="Send message"
+                          className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-gradient-to-br from-[#ffd700] to-[#ffed4e] rounded-lg hover:from-[#ffed4e] hover:to-[#ffd700] transition-all duration-300 hover:shadow-lg hover:shadow-[#ffd700]/50 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
                         >
-                          Send
+                          <svg
+                            className="w-5 h-5 text-[#121212] rotate-90"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </form>
