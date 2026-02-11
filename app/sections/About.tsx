@@ -11,7 +11,7 @@ interface Message {
 const About = () => {
   // Chat toggle state - Desktop: open by default, Mobile: collapsed by default
   // Responsive behavior synced with Tailwind lg breakpoint (1024px)
-  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false)
   
   // Initialize chat state based on screen size on component mount
   useEffect(() => {
@@ -60,7 +60,7 @@ const About = () => {
     setTimeout(() => {
       const botMessage: Message = {
         id: Date.now() + 1,
-        text: "This is a demo response. API integration coming soon. I'm here to help you learn more about Mitesh's AI engineering expertise!",
+        text: "This is a demo response. I am currently working on chatbot's backend to provide real answers about my experience and skills. Stay tuned!",
         sender: 'bot',
         timestamp: new Date(),
       };
