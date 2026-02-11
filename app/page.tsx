@@ -2,6 +2,7 @@
 
 import Header from "./sections/Header";
 import About from "./sections/About";
+import Skill from "./sections/Skill";
 import Works from "./sections/Works";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
@@ -23,6 +24,7 @@ export default function Home() {
     <main>
       <Header />
       <About />
+      <Skill />
       <Experience />
       <Works />
       <Contact />

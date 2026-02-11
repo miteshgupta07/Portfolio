@@ -92,6 +92,7 @@ export const technologies = [
 
 export const sections = [
   { idRoute: "/#about", name: "About" },
+  { idRoute: "/#skills", name: "Skills" },
   { idRoute: "/#experience", name: "Experience" },
   { idRoute: "/#works", name: "Works" },
   { idRoute: "/#contact", name: "Contact" },

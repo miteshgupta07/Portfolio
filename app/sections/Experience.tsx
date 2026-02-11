@@ -81,7 +81,7 @@ const Experience = () => {
         <span className="font-bold text-lg sm:text-2xl font-idgrotesk">
           Professional Experience
         </span>
-        <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
+        <div className="w-[5%] lg:w-36 border-b-[1px] border-b-[#ffd700]"></div>
       </header>
       <div className="flex flex-col gap-5 lg:flex-row w-full py-10 lg:gap-10 items-center">
         <div

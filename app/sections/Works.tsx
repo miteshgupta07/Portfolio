@@ -15,7 +15,7 @@ const Works = () => {
           <span className=" font-bold text-lg sm:text-2xl font-idgrotesk">
             Projects
           </span>
-          <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
+          <div className="w-[5%] lg:w-36 border-b-[1px] border-b-[#ffd700]"></div>
         </div>
       </header>
       <div className="flex flex-col gap-24 mt-10">
