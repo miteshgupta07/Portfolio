@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 interface Message {
   id: number;
@@ -9,9 +10,22 @@ interface Message {
 }
 
 const About = () => {
+  // Get or create session ID
+  const getSessionId = () => {
+    if (typeof window === 'undefined') return '';
+    
+    let sessionId = localStorage.getItem('chatbot_session_id');
+    if (!sessionId) {
+      sessionId = uuidv4();
+      localStorage.setItem('chatbot_session_id', sessionId);
+    }
+    return sessionId;
+  };
+
   // Chat toggle state - Desktop: open by default, Mobile: collapsed by default
   // Responsive behavior synced with Tailwind lg breakpoint (1024px)
   const [isChatOpen, setIsChatOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
   
   // Initialize chat state based on screen size on component mount
   useEffect(() => {
@@ -41,31 +55,66 @@ const About = () => {
     scrollToBottom();
   }, [messages]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!input.trim() || isLoading) return;
 
+    const userInput = input.trim();
+    
     // Add user message
     const userMessage: Message = {
       id: Date.now(),
-      text: input,
+      text: userInput,
       sender: 'user',
       timestamp: new Date(),
     };
 
     setMessages((prev) => [...prev, userMessage]);
     setInput('');
+    setIsLoading(true);
 
-    // Add bot response after a short delay
-    setTimeout(() => {
+    try {
+      const sessionId = getSessionId();
+      
+      const response = await fetch('https://api.researchmate.me/portfolio/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          session_id: sessionId,
+          message: userInput,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('API request failed');
+      }
+
+      const data = await response.json();
+      
       const botMessage: Message = {
         id: Date.now() + 1,
-        text: "This is a demo response. I am currently working on chatbot's backend to provide real answers about my experience and skills. Stay tuned!",
+        text: data.response || "I received your message but couldn't generate a response.",
         sender: 'bot',
         timestamp: new Date(),
       };
+      
       setMessages((prev) => [...prev, botMessage]);
-    }, 500);
+    } catch (error) {
+      console.error('Chat API error:', error);
+      
+      const errorMessage: Message = {
+        id: Date.now() + 1,
+        text: "Sorry, something went wrong. Please try again.",
+        sender: 'bot',
+        timestamp: new Date(),
+      };
+      
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -210,24 +259,46 @@ const About = () => {
                         />
                         <button
                           type="submit"
-                          disabled={!input.trim()}
+                          disabled={!input.trim() || isLoading}
                           aria-label="Send message"
                           className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-gradient-to-br from-[#ffd700] to-[#ffed4e] rounded-lg hover:from-[#ffed4e] hover:to-[#ffd700] transition-all duration-300 hover:shadow-lg hover:shadow-[#ffd700]/50 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
                         >
-                          <svg
-                            className="w-5 h-5 text-[#121212] rotate-90"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                            />
-                          </svg>
+                          {isLoading ? (
+                            <svg
+                              className="w-5 h-5 text-[#121212] animate-spin"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle
+                                className="opacity-25"
+                                cx="12"
+                                cy="12"
+                                r="10"
+                                stroke="currentColor"
+                                strokeWidth="4"
+                              ></circle>
+                              <path
+                                className="opacity-75"
+                                fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                              ></path>
+                            </svg>
+                          ) : (
+                            <svg
+                              className="w-5 h-5 text-[#121212] rotate-90"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                              />
+                            </svg>
+                          )}
                         </button>
                       </div>
                     </form>
