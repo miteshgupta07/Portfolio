@@ -11,16 +11,6 @@ export const socialLinks = [
     simpleIcon: "https://cdn.simpleicons.org/kaggle",
   },
   {
-    name: "Upwork",
-    link: "https://www.upwork.com/freelancers/~0159c66ea60d0cb067?mp_source=share",
-    simpleIcon: "https://cdn.simpleicons.org/upwork",
-  },
-  {
-    name: "Fiverr",
-    link: "https://www.fiverr.com/s/pd445jZ",
-    simpleIcon: "https://cdn.simpleicons.org/fiverr",
-  },
-  {
     name: "Github",
     link: "https://github.com/miteshgupta07",
     simpleIcon: "https://cdn.simpleicons.org/github/white",
@@ -45,8 +35,16 @@ export const socialLinks = [
     link: "https://www.instagram.com/miitesh_gupta",
     simpleIcon: "https://cdn.simpleicons.org/instagram",
   },
-
-
+  {
+    name: "Upwork",
+    link: "https://www.upwork.com/freelancers/~0159c66ea60d0cb067?mp_source=share",
+    simpleIcon: "https://cdn.simpleicons.org/upwork",
+  },
+  {
+    name: "Fiverr",
+    link: "https://www.fiverr.com/s/pd445jZ",
+    simpleIcon: "https://cdn.simpleicons.org/fiverr",
+  },
 ];
 
 export const technologies = [
