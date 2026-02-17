@@ -34,27 +34,6 @@ export default function ViewResume() {
 
   return (
     <div className="flex flex-col xl:mx-[10%] lg:mx-[7%] mx-0 md:mx-[7%] my-24 mt-24 py-8 gap-8">
-      {/* Header with navigation and download button */}
-      <div className="flex items-center justify-between flex-wrap gap-4">
-        <div className="flex items-center gap-2 sm:gap-8">
-          <Link
-            href={"/"}
-            className="p-2 bg-[#FBEDDD] rounded-full text-black flex w-min hover:bg-[#F5E6D3] transition-colors"
-          >
-            <IoMdArrowRoundBack size={25} />
-          </Link>
-          <h1 className="font-semibold text-4xl sm:text-5xl">Resume</h1>
-        </div>
-        
-        <button
-          onClick={handleDownload}
-          className="flex items-center gap-2 px-4 py-2 bg-secondary-color-3 text-black rounded-lg hover:bg-[#E6C200] transition-colors font-medium"
-        >
-          <IoMdDownload size={20} />
-          Download PDF
-        </button>
-      </div>
-
       {error ? (
         <div className="flex flex-col items-center justify-center p-8 text-center">
           <div className="text-red-500 text-xl mb-4">⚠️ {error}</div>
@@ -73,13 +52,30 @@ export default function ViewResume() {
         <>
           {/* Resume viewer */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-gray-50 dark:bg-gray-700 px-6 py-4 border-b dark:border-gray-600">
-              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                Mitesh Gupta - Resume
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
-                Preview - Download PDF for best quality
-              </p>
+            <div className="bg-gray-50 dark:bg-gray-700 px-6 py-4 border-b dark:border-gray-600 flex items-center justify-between">
+              
+              {/* Back Button */}
+              <Link
+                href="/"
+                className="p-2 bg-[#FBEDDD] rounded-full text-black hover:bg-[#F5E6D3] transition-colors"
+              >
+                <IoMdArrowRoundBack size={22} />
+              </Link>
+
+              {/* Center Text */}
+              <div className="flex-1 text-center font-semibold text-gray-800 dark:text-gray-200">
+                View and Download Mitesh Gupta's Resume
+              </div>
+
+              {/* Download Button */}
+              <button
+                onClick={handleDownload}
+                className="flex items-center gap-2 px-4 py-2 bg-secondary-color-3 text-black rounded-lg hover:bg-[#E6C200] transition-colors font-medium"
+              >
+                <IoMdDownload size={18} />
+                Download PDF
+              </button>
+
             </div>
             
             <div className="p-4">
