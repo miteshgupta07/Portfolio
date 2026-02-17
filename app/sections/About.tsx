@@ -1,6 +1,10 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks';
+import rehypeSanitize from 'rehype-sanitize';
 
 interface Message {
   id: number;
@@ -10,34 +14,6 @@ interface Message {
 }
 
 const About = () => {
-  // Utility function to format message text with line breaks and bold
-  const formatMessage = (text: string): JSX.Element[] => {
-    // Split by newlines (handle both escaped and actual newlines)
-    const lines = text.split(/\\n|\n/);
-    
-    return lines.map((line, lineIndex) => {
-      // Empty line = line break
-      if (!line.trim()) {
-        return <br key={lineIndex} />;
-      }
-      
-      // Parse bold text (**text**)
-      const parts = line.split(/(\*\*.*?\*\*)/);
-      
-      return (
-        <span key={lineIndex} className="block">
-          {parts.map((part, partIndex) => {
-            if (part.startsWith('**') && part.endsWith('**')) {
-              const boldText = part.slice(2, -2);
-              return <strong key={partIndex} className="font-bold">{boldText}</strong>;
-            }
-            return <span key={partIndex}>{part}</span>;
-          })}
-        </span>
-      );
-    });
-  };
-
   // Generate session ID once per component mount (temporary per tab session)
   const sessionIdRef = useRef(uuidv4());
 
@@ -294,7 +270,52 @@ const About = () => {
                                 : 'bg-gradient-to-br from-[#262626] to-[#1a1a1a] text-[#ffffff] shadow-lg shadow-black/50 border border-[#ffffff]/5'
                             }`}
                           >
-                            <div className="text-sm leading-relaxed font-medium">{formatMessage(message.text)}</div>
+                            <div className="text-sm leading-relaxed font-medium">
+                              {message.sender === 'user' ? (
+                                message.text
+                              ) : (
+                                <ReactMarkdown
+                                  remarkPlugins={[remarkGfm, remarkBreaks]}
+                                  rehypePlugins={[rehypeSanitize]}
+                                  components={{
+                                    a: ({ node, ...props }) => (
+                                      <a
+                                        {...props}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[#ffd700] hover:text-[#ffed4e] underline"
+                                      />
+                                    ),
+                                    p: ({ node, ...props }) => (
+                                      <p {...props} className="mb-2 last:mb-0" />
+                                    ),
+                                    h1: ({ node, ...props }) => (
+                                      <h1 {...props} className="text-xl font-bold mb-2 mt-2" />
+                                    ),
+                                    h2: ({ node, ...props }) => (
+                                      <h2 {...props} className="text-lg font-bold mb-2 mt-2" />
+                                    ),
+                                    h3: ({ node, ...props }) => (
+                                      <h3 {...props} className="text-base font-bold mb-1 mt-1" />
+                                    ),
+                                    ul: ({ node, ...props }) => (
+                                      <ul {...props} className="list-disc list-inside mb-2 space-y-1" />
+                                    ),
+                                    ol: ({ node, ...props }) => (
+                                      <ol {...props} className="list-decimal list-inside mb-2 space-y-1" />
+                                    ),
+                                    li: ({ node, ...props }) => (
+                                      <li {...props} className="ml-2" />
+                                    ),
+                                    strong: ({ node, ...props }) => (
+                                      <strong {...props} className="font-bold" />
+                                    ),
+                                  }}
+                                >
+                                  {message.text}
+                                </ReactMarkdown>
+                              )}
+                            </div>
                           </div>
                         </div>
                       ))}
