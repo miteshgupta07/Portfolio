@@ -10,22 +10,42 @@ interface Message {
 }
 
 const About = () => {
-  // Get or create session ID
-  const getSessionId = () => {
-    if (typeof window === 'undefined') return '';
+  // Utility function to format message text with line breaks and bold
+  const formatMessage = (text: string): JSX.Element[] => {
+    // Split by newlines (handle both escaped and actual newlines)
+    const lines = text.split(/\\n|\n/);
     
-    let sessionId = localStorage.getItem('chatbot_session_id');
-    if (!sessionId) {
-      sessionId = uuidv4();
-      localStorage.setItem('chatbot_session_id', sessionId);
-    }
-    return sessionId;
+    return lines.map((line, lineIndex) => {
+      // Empty line = line break
+      if (!line.trim()) {
+        return <br key={lineIndex} />;
+      }
+      
+      // Parse bold text (**text**)
+      const parts = line.split(/(\*\*.*?\*\*)/);
+      
+      return (
+        <span key={lineIndex} className="block">
+          {parts.map((part, partIndex) => {
+            if (part.startsWith('**') && part.endsWith('**')) {
+              const boldText = part.slice(2, -2);
+              return <strong key={partIndex} className="font-bold">{boldText}</strong>;
+            }
+            return <span key={partIndex}>{part}</span>;
+          })}
+        </span>
+      );
+    });
   };
+
+  // Generate session ID once per component mount (temporary per tab session)
+  const sessionIdRef = useRef(uuidv4());
 
   // Chat toggle state - Desktop: open by default, Mobile: collapsed by default
   // Responsive behavior synced with Tailwind lg breakpoint (1024px)
   const [isChatOpen, setIsChatOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [messages, setMessages] = useState<Message[]>([]);
   
   // Initialize chat state based on screen size on component mount
   useEffect(() => {
@@ -33,14 +53,51 @@ const About = () => {
     setIsChatOpen(isDesktop);
   }, []);
   
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: 1,
-      text: "Hello! I'm an AI assistant. Ask me about Mitesh's experience, skills, or projects!",
-      sender: 'bot',
-      timestamp: new Date(),
-    },
-  ]);
+  // Load chat history on component mount
+  useEffect(() => {
+    const loadHistory = async () => {
+      const sessionId = sessionIdRef.current;
+      
+      try {
+        const response = await fetch(`https://api.researchmate.me/history?session_id=${sessionId}`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to load history');
+        }
+        
+        const data = await response.json();
+        
+        if (data.messages && data.messages.length > 0) {
+          const loadedMessages: Message[] = data.messages.map((msg: any, index: number) => ({
+            id: index + 1,
+            text: msg.content,
+            sender: msg.role === 'user' ? 'user' : 'bot',
+            timestamp: new Date(),
+          }));
+          setMessages(loadedMessages);
+        } else {
+          // Empty history, show default greeting
+          setMessages([{
+            id: 1,
+            text: "Hello! I'm an AI assistant. Ask me about Mitesh's experience, skills, or projects!",
+            sender: 'bot',
+            timestamp: new Date(),
+          }]);
+        }
+      } catch (error) {
+        console.error('Failed to load chat history:', error);
+        // Fallback to default greeting
+        setMessages([{
+          id: 1,
+          text: "Hello! I'm an AI assistant. Ask me about Mitesh's experience, skills, or projects!",
+          sender: 'bot',
+          timestamp: new Date(),
+        }]);
+      }
+    };
+    
+    loadHistory();
+  }, []);
   const [input, setInput] = useState('');
   const messagesContainerRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -74,7 +131,7 @@ const About = () => {
     setIsLoading(true);
 
     try {
-      const sessionId = getSessionId();
+      const sessionId = sessionIdRef.current;
       
       const response = await fetch('https://api.researchmate.me/portfolio/chat', {
         method: 'POST',
@@ -237,7 +294,7 @@ const About = () => {
                                 : 'bg-gradient-to-br from-[#262626] to-[#1a1a1a] text-[#ffffff] shadow-lg shadow-black/50 border border-[#ffffff]/5'
                             }`}
                           >
-                            <p className="text-sm leading-relaxed font-medium">{message.text}</p>
+                            <div className="text-sm leading-relaxed font-medium">{formatMessage(message.text)}</div>
                           </div>
                         </div>
                       ))}
