@@ -17,7 +17,7 @@ const Copyright = () => {
         
       </p>
       <div></div>
-      <p className=" ">&copy; 2024 All rights reserved.</p>
+      <p className=" ">&copy; 2026 All rights reserved.</p>
     </div>
   );
 };
