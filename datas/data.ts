@@ -42,7 +42,7 @@ export const socialLinks = [
   },
   {
     name: "LeetCode",
-    link: "https://leetcode.com/miteshgupta07",
+    link: "https://leetcode.com/u/mgmiteshgupta134/",
     simpleIcon: "https://cdn.simpleicons.org/leetcode",
   }
 
