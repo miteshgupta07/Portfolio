@@ -10,6 +10,11 @@ export const socialLinks = [
     simpleIcon: "/svgs/linkedin.svg",
   },
   {
+    name: "Kaggle",
+    link: "https://www.kaggle.com/mgmitesh",
+    simpleIcon: "https://cdn.simpleicons.org/kaggle",
+  },
+  {
     name: "Upwork",
     link: "https://www.upwork.com/freelancers/~0159c66ea60d0cb067?mp_source=share",
     simpleIcon: "https://cdn.simpleicons.org/upwork",
@@ -35,6 +40,11 @@ export const socialLinks = [
     link: "https://www.instagram.com/miitesh_gupta",
     simpleIcon: "https://cdn.simpleicons.org/instagram",
   },
+  {
+    name: "LeetCode",
+    link: "https://leetcode.com/miteshgupta07",
+    simpleIcon: "https://cdn.simpleicons.org/leetcode",
+  }
 
 ];
 
