@@ -29,9 +29,7 @@ const Header = () => {
         </div>
         <Button asChild variant={"outline"}>
           <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"mailto:miteshgupta2711@gmail.com"}
+            href="/#contact"
             className="flex items-center !border-[#FFD700] justify-center gap-3 px-10 py-6  font-bold text-[1.15rem] w-max hover:!bg-[#FFD700] hover:!text-[#121212] border-[4px]  mt-5 "
           >
             Get in Touch
