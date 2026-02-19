@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { socialLinks } from "@/datas/data";
 
 const Header = () => {
   return (
@@ -49,6 +50,26 @@ const Header = () => {
       >
         <div className="relative h-[18rem] w-[18rem] lg:h-[17rem] lg:w-[17rem]">
         </div>
+      </section>
+      
+      {/* Mobile-only social links */}
+      <section className="flex md:hidden justify-center items-center gap-6 mt-8 w-full" data-aos="fade-up">
+        {socialLinks.map((socialLink, id) => (
+          <Link
+            key={id}
+            href={socialLink.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={socialLink.simpleIcon}
+              alt={socialLink.name}
+              height={35}
+              width={35}
+              className="transition-all duration-300 filter grayscale dark:grayscale-0 hover:grayscale-0 dark:filter dark:brightness-0 dark:invert hover:dark:brightness-100 hover:dark:invert-0"
+            />
+          </Link>
+        ))}
       </section>
     </header>
   );
