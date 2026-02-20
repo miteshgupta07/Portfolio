@@ -10,6 +10,15 @@ export async function POST(req: Request) {
       return Response.json({ error: "Missing fields" }, { status: 400 });
     }
 
+    // Extract IP address from request headers (works on Vercel)
+    const forwardedFor = req.headers.get("x-forwarded-for");
+    const ip = forwardedFor
+      ? forwardedFor.split(",")[0].trim()
+      : req.headers.get("x-real-ip") || "IP not available";
+
+    // Extract user agent for spam detection
+    const userAgent = req.headers.get("user-agent") || "Unknown";
+
     // NOTE: In production, configure a verified domain in Resend
     // Replace 'onboarding@resend.dev' with your verified domain email
 await resend.emails.send({
@@ -54,6 +63,14 @@ await resend.emails.send({
           <div style="margin-top:8px;padding:16px;background:#f9fafb;border-radius:12px;border:1px solid #eee;color:#262626;font-size:14px;line-height:1.6;">
             ${message.replace(/\n/g, "<br/>")}
           </div>
+        </div>
+
+        <!-- Sender Information -->
+        <div style="margin-top:20px;padding:12px;background:#f3f4f6;border-radius:8px;font-size:12px;color:#555;">
+          <strong>Sender IP:</strong> ${ip}
+        </div>
+        <div style="margin-top:8px;padding:12px;background:#f3f4f6;border-radius:8px;font-size:12px;color:#777;">
+          <strong>User Agent:</strong> ${userAgent}
         </div>
 
       </div>
