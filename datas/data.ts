@@ -134,7 +134,7 @@ export const companiesInfo = [
     company: "DataMinds Labs",
     short_desc:"",
     location: "India (remote)",
-    duration: "January 2025 - March 2025",
+    duration: "January 2025 - February 2025",
     roles: [
       "Waterborne Disease Prediction: Built machine learning models to forecast disease outbreaks; achieved a Mean Absolute Error (MAE) of 0.53",
     ],
