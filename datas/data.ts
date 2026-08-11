@@ -120,7 +120,7 @@ export const companiesInfo = [
     company: "Vaultpay Solutions Pvt. Ltd. (MyRidez)",
     short_desc: "Worked on AI/ML solutions for the company’s ride-hailing platform — MyRidez",
     location: "On-site, Ludhiana, India",
-    duration: "March 2025 - Present",
+    duration: "March 2025 - June 2026",
     roles: [
     "Dynamic Surge Pricing Model: Built and deployed a FastAPI-based ML pricing engine using real-time weather, traffic, and demand data; increased peak-period revenue by 23%.",
     "Multilingual Customer Support Chatbot: Developed an LLM-powered chatbot supporting 10+ Indian languages with Firestore integration and prompt-injection safeguards; reduced first-response time to under 5 seconds",
