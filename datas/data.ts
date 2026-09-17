@@ -109,9 +109,7 @@ export const sections = [
 
 export const companies = [
   "Vaultpay Solutions",
-  "Dataminds Labs",
-  "Pantech Prolabs",
-  "Pantech Solutions",
+  "Dataminds Labs"
 ];
 
 export const companiesInfo = [
@@ -120,12 +118,12 @@ export const companiesInfo = [
     company: "Vaultpay Solutions Pvt. Ltd. (MyRidez)",
     short_desc: "Worked on AI/ML solutions for the company’s ride-hailing platform — MyRidez",
     location: "On-site, Ludhiana, India",
-    duration: "March 2025 - June 2026",
+    duration: "March 2025 - Present",
     roles: [
-    "Dynamic Surge Pricing Model: Built and deployed a FastAPI-based ML pricing engine using real-time weather, traffic, and demand data; increased peak-period revenue by 23%.",
-    "Multilingual Customer Support Chatbot: Developed an LLM-powered chatbot supporting 10+ Indian languages with Firestore integration and prompt-injection safeguards; reduced first-response time to under 5 seconds",
-    "Document Verification System: Built a computer vision and OCR-based KYC solution for multiple document types; reduced onboarding time by ~70% and significantly minimized manual verification.",
-    "Ride Demand Prediction System: Designed a two-stage ML pipeline to identify high-demand zones in Ludhiana, enabling driver heatmaps and improving ride availability in peak areas."
+    "Dynamic Surge Pricing Model: Developed and deployed a real-time surge-pricing ML service using traffic, weather, and demand signals, increasing peak-period revenue by 23%.",
+    "Multilingual Customer Support Chatbot: Built and deployed an LLM-powered chatbot supporting 10+ Indian languages, integrated with Firebase Firestore and protected against prompt injection; achieved p95 latency <2s, eliminating manual",
+    "Document Verification System: Developed and deployed a computer vision and OCR-powered document verification system supporting multiple ID types; reduced onboarding time by ~70% and automated nearly all manual verificat.",
+    "Ride Demand Prediction System: Designed and deployed a two-stage ML pipeline combining classification and regression to forecast high-demand zones; increased driver ride fulfillment by 18% in peak-demand areas through real-time app heatmap integration."
   ],
 
   },
@@ -136,36 +134,15 @@ export const companiesInfo = [
     location: "India (remote)",
     duration: "January 2025 - February 2025",
     roles: [
-      "Waterborne Disease Prediction: Built machine learning models to forecast disease outbreaks; achieved a Mean Absolute Error (MAE) of 0.53",
-    ],
-  },
-  {
-    title: "Artificial Intelligence Intern",
-    company: "Pantech Prolabs",
-    short_desc:"",
-    location: "India (remote)",
-    duration: "July 2022 - August 2022",
-    roles: [
-      "Query Handling Chatbot: Developed a rule-based NLP chatbot to handle common user queries; achieved an 85% query resolution rate during testing.",
-    ],
-  },
-  {
-    title: "Machine Learning Intern",
-    company: "Pantech Solutions",
-    short_desc:"",
-    location: "India (Remote)",
-    duration: "June 2022 - July 2022",
-    roles: [
-      "Fraud Detection System: Designed a supervised learning model for online transaction fraud detection; reached 92% precision in identifying fraudulent activity."
+      "Waterborne Disease Prediction: Developed a machine learning model to predict waterborne disease outbreaks using data from Tanzania, Africa and achieved a Mean Absolute Error (MAE) of 0.53, demonstrating high model accuracy.",
     ],
   },
 ];
-
 export const projects = [
   {
     name: "MyRidez AI Solutions",
     type: "Industry Project",
-    description: "Worked on production AI systems at MyRidez, including surge pricing optimization, multilingual customer support automation, demand forecasting, and OCR-based document verification, improving revenue efficiency, response times, and onboarding workflows at scale.",
+    description: "Worked on production AI systems at MyRidez, and developed a surge pricing system, multilingual customer support automation, demand forecasting, and OCR-based document verification, improving revenue efficiency, response times, and onboarding workflows at scale.",
     image: "/myridez.webp",
     liveLink: "https://play.google.com/store/apps/details?id=com.myridez.usersappps&pcampaignid=web_share",
     stacks: [
@@ -187,20 +164,20 @@ export const projects = [
     stacks: ["AWS", "Langchain", "Streamlit", "FastAPI","FAISS"],
   },
   {
-    name: "Plant Guard",
-    type: "Featured Project",
-    description:"Plant Guard is a smart plant disease detection tool that uses image recognition to identify plant diseases and suggest treatments, helping gardeners and farmers keep their plants healthy.",
-    image: "/PlantGuard.png",
-    liveLink: "https://plant-guard.streamlit.app/",
-    stacks: ["Tensorflow","Computer-Vision", "Streamlit", "Python"],
-  },
-  {
     name: "Automatic License Plate Detection",
     type: "Personal Project",
     description:"An automatic license plate recognition system that uses computer vision to detect and read vehicle license plates, providing automated vehicle identification for access control, parking management, and security applications.",
     image: "/ALPR.png",
     liveLink: "https://github.com/miteshgupta07/Automatic-License-Plate-Recognition-System",
     stacks: ["Computer-Vision", "OCR", "Python"],
+  },
+  {
+    name: "Plant Guard",
+    type: "Featured Project",
+    description:"Plant Guard is a smart plant disease detection tool that uses image recognition to identify plant diseases and suggest treatments, helping gardeners and farmers keep their plants healthy.",
+    image: "/PlantGuard.png",
+    liveLink: "https://plant-guard.streamlit.app/",
+    stacks: ["Tensorflow","Computer-Vision", "Streamlit", "Python"],
   },
   {
     name: "SketchGen",

@@ -389,7 +389,7 @@ const About = () => {
           {/* Right half - contains article text */}
           <div className="w-full lg:w-1/2">
             <article className="text-justify">
-              I am an AI Engineer with one year of hands-on industry experience, 
+              I am an AI Engineer with one and half years of hands-on industry experience, 
               building and deploying real-world AI systems in production environments. 
               I have worked on multiple projects within a professional setting, 
               contributing to end-to-end machine learning and generative AI solutions.
