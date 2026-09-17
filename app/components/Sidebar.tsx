@@ -4,31 +4,37 @@ import Link from "next/link";
 const Sidebar = () => {
   return (
     <section
-      className="fixed top-0 left-0 hidden md:inline-block w-[10%] h-full"
+      className="fixed top-24 bottom-0 left-0 z-10 hidden w-[10%] md:block"
       data-aos="fade-right"
     >
-      <ul className="flex flex-col justify-center items-center gap-10 h-full">
-        {socialLinks.map((socialLink, id) => (
-          <li
-            key={id}
-            className="relative flex items-center cursor-pointer gap-5"
-          >
-            <Link
-              href={socialLink.link}
-              target="_blank"
-              rel="noopener noreferrer"
+      <nav
+        className="social-sidebar h-full w-full overflow-y-auto overflow-x-hidden py-8 [scrollbar-width:thin] [scrollbar-color:#FFD700_transparent]"
+        aria-label="Social links"
+      >
+        <ul className="flex min-h-full flex-col items-center justify-center gap-10">
+          {socialLinks.map((socialLink) => (
+            <li
+              key={socialLink.name}
+              className="relative flex cursor-pointer items-center gap-5"
             >
-              <img
-                src={socialLink.simpleIcon}
-                alt={socialLink.name}
-                height={35}
-                width={35}
-                className="transition-all duration-300 filter grayscale dark:grayscale-0 hover:grayscale-0 dark:filter dark:brightness-0 dark:invert hover:dark:brightness-100 hover:dark:invert-0"
-              />
-            </Link>
-          </li>
-        ))}
-      </ul>
+              <Link
+                href={socialLink.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={socialLink.name}
+              >
+                <img
+                  src={socialLink.simpleIcon}
+                  alt={socialLink.name}
+                  height={35}
+                  width={35}
+                  className="filter grayscale transition-all duration-300 hover:grayscale-0 dark:grayscale-0 dark:brightness-0 dark:invert dark:filter hover:dark:brightness-100 hover:dark:invert-0"
+                />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </section>
   );
 };

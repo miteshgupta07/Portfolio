@@ -53,7 +53,7 @@ const Header = () => {
       </section>
       
       {/* Mobile-only social links */}
-      <section className="flex md:hidden justify-center items-center gap-6 mt-8 w-full" data-aos="fade-up">
+      <section className="flex md:hidden justify-start sm:justify-center items-center gap-6 mt-8 w-full overflow-x-auto px-4 pb-2" data-aos="fade-up">
         {socialLinks.map((socialLink, id) => (
           <Link
             key={id}

@@ -35,6 +35,17 @@
   border-radius: 10px;
 }
 
+.social-sidebar::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+}
+
+.social-sidebar::-webkit-scrollbar-thumb {
+  background: #ffd700;
+  border: none;
+  border-radius: 20px;
+}
+
 @tailwind utilities;
 
 :root {
