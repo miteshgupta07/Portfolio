@@ -60,11 +60,11 @@ export const technologies = [
   },
   {
     name: "LangChain",
-    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/langchain-corporate/default.svg",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/langgraph-langchain/color.svg",
   },
   {
     name: "LangGraph",
-    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/langgraph-langchain/color.svg",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/langchain-corporate/default.svg",
   },
   {
     name: "Python",
@@ -76,7 +76,7 @@ export const technologies = [
   },
   {
     name: "Kubernetes",
-    iconLink: "https://cdn.simpleicons.org/kubernetes",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/kubernetes/default.svg",
   },
   {
     name: "Streamlit",
@@ -84,7 +84,7 @@ export const technologies = [
   },
   {
     name: "Hugging-Face",
-    iconLink: "https://cdn.simpleicons.org/huggingface",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/hugging-face/default.svg",
   },
   {
     name: "MySQL",

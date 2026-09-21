@@ -40,10 +40,9 @@ const Skill = () => {
                             transition-all duration-300 pointer-events-none"></div>
               
               {/* Icon */}
-              <div className="relative z-10 filter grayscale group-hover:grayscale-0 
-                            dark:filter dark:brightness-50 dark:invert 
-                            group-hover:dark:brightness-100 group-hover:dark:invert-0
-                            transition-all duration-300">
+              <div className="relative z-10 transition-all duration-300 
+                              group-hover:scale-110 group-hover:brightness-110 
+                              group-hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.4)]">
                 <img
                   src={tech.iconLink}
                   alt={tech.name}
