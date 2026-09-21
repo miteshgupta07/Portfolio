@@ -47,6 +47,8 @@ export const socialLinks = [
   },
 ];
 
+//  Website of icon https://thesvg.org/
+
 export const technologies = [
   {
     name: "AWS",
@@ -58,19 +60,27 @@ export const technologies = [
   },
   {
     name: "LangChain",
-    iconLink: "https://cdn.simpleicons.org/langchain/green",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/langchain-corporate/default.svg",
+  },
+  {
+    name: "LangGraph",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/langgraph-langchain/color.svg",
   },
   {
     name: "Python",
-    iconLink: "https://cdn.simpleicons.org/python",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/python/default.svg",
   },
   {
     name: "Docker",
-    iconLink: "https://cdn.simpleicons.org/docker",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/docker-badge/default.svg",
+  },
+  {
+    name: "Kubernetes",
+    iconLink: "https://cdn.simpleicons.org/kubernetes",
   },
   {
     name: "Streamlit",
-    iconLink: "https://cdn.simpleicons.org/streamlit",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/streamlit/default.svg",
   },
   {
     name: "Hugging-Face",
@@ -78,7 +88,11 @@ export const technologies = [
   },
   {
     name: "MySQL",
-    iconLink: "https://cdn.simpleicons.org/mysql",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/mysql/wordmark-light.svg",
+  },
+  {
+    name: "PostgreSQL",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/postgresql/default.svg",
   },
   {
     name: "MLFlow",
@@ -91,6 +105,10 @@ export const technologies = [
   {
     name: "Tensorflow",
     iconLink: "https://cdn.simpleicons.org/tensorflow",
+  },
+  {
+    name: "MCP",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/model-context-protocol/default.svg",
   },
   {
     name: "Git",
