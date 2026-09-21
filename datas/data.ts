@@ -3,27 +3,32 @@ export const socialLinks = [
   {
     name: "LeetCode",
     link: "https://leetcode.com/u/mgmiteshgupta134/",
-    simpleIcon: "https://cdn.simpleicons.org/leetcode",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/leetcode/default.svg",
   },
   {
     name: "Kaggle",
     link: "https://www.kaggle.com/mgmitesh",
-    simpleIcon: "https://cdn.simpleicons.org/kaggle",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/kaggle/default.svg",
   },
   {
     name: "Github",
     link: "https://github.com/miteshgupta07",
-    simpleIcon: "https://cdn.simpleicons.org/github/white",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/github/dark.svg",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/mitesh-gupta",
-    simpleIcon: "/svgs/linkedin.svg",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/linkedin/default.svg",
   },
   {
     name: "X",
     link: "https://x.com/mg_mitesh",
-    simpleIcon: "https://cdn.simpleicons.org/x/white",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/x-formerly-twitter/default.svg",
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/miitesh_gupta",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/default.svg",
   },
   {
     name: "Medium",
@@ -31,14 +36,9 @@ export const socialLinks = [
     simpleIcon: "https://cdn.simpleicons.org/medium/white",
   },
   {
-    name: "Instagram",
-    link: "https://www.instagram.com/miitesh_gupta",
-    simpleIcon: "https://cdn.simpleicons.org/instagram",
-  },
-  {
     name: "Upwork",
     link: "https://www.upwork.com/freelancers/~0159c66ea60d0cb067?mp_source=share",
-    simpleIcon: "https://cdn.simpleicons.org/upwork",
+    simpleIcon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/upwork/default.svg",
   },
   {
     name: "Fiverr",

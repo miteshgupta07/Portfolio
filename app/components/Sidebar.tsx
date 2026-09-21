@@ -28,7 +28,7 @@ const Sidebar = () => {
                   alt={socialLink.name}
                   height={35}
                   width={35}
-                  className="filter grayscale transition-all duration-300 hover:grayscale-0 dark:grayscale-0 dark:brightness-0 dark:invert dark:filter hover:dark:brightness-100 hover:dark:invert-0"
+                  className="transition-all duration-300 ease-out hover:scale-125 hover:brightness-125 hover:drop-shadow-[0_0_10px_rgba(248,209,1,0.6)]"
                 />
               </Link>
             </li>
