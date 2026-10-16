@@ -15,8 +15,8 @@ export default function ViewResume() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume/Mitesh Gupta Resume-September 2026.pdf";
-    link.download = "Mitesh Gupta Resume-September 2026.pdf";
+    link.href = "/resume/Mitesh Gupta Resume-October 2026.pdf";
+    link.download = "Mitesh Gupta Resume-October 2026.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -82,9 +82,9 @@ export default function ViewResume() {
               {/* PDF Viewer using iframe */}
               <div className="w-full" style={{ height: "80vh" }}>
                 <iframe
-                  src="/resume/Mitesh Gupta Resume-September 2026.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                  src="/resume/Mitesh Gupta Resume-October 2026.pdf#toolbar=1&navpanes=0&scrollbar=1"
                   className="w-full h-full border border-gray-300 dark:border-gray-600 rounded"
-                  title="Mitesh Gupta Resume-September 2026"
+                  title="Mitesh Gupta Resume-October 2026"
                   loading="lazy"
                   onError={() => setError("Error loading PDF viewer")}
                 />
