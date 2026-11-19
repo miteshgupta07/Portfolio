@@ -70,6 +70,7 @@ export const technologies = [
     name: "Python",
     iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/python/default.svg",
   },
+
   {
     name: "Docker",
     iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/docker-badge/default.svg",
@@ -79,8 +80,24 @@ export const technologies = [
     iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/kubernetes/default.svg",
   },
   {
-    name: "Streamlit",
-    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/streamlit/default.svg",
+    name: "MLFlow",
+    iconLink: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ml-flow-wordmark-dark.svg",
+  },
+  {
+    name: "HTML",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/html5/default.svg",
+  },
+  {
+    name: "CSS",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/css3/default.svg",
+  },
+  {
+    name: "JavaScript",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/javascript/default.svg",
+  },
+  {
+    name: "React",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/react/default.svg",
   },
   {
     name: "Hugging-Face",
@@ -94,10 +111,7 @@ export const technologies = [
     name: "PostgreSQL",
     iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/postgresql/default.svg",
   },
-  {
-    name: "MLFlow",
-    iconLink: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ml-flow-wordmark-dark.svg",
-  },
+
   {
     name: "PyTorch",
     iconLink: "https://cdn.simpleicons.org/pytorch",
@@ -114,7 +128,10 @@ export const technologies = [
     name: "Git",
     iconLink: "https://cdn.simpleicons.org/git",
   },
-
+  {
+    name: "Streamlit",
+    iconLink: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/streamlit/default.svg",
+  },
 ];
 
 export const sections = [
@@ -138,17 +155,17 @@ export const companiesInfo = [
     location: "On-site, Ludhiana, India",
     duration: "March 2025 - Present",
     roles: [
-    "Dynamic Surge Pricing Model: Developed and deployed a real-time surge-pricing ML service using traffic, weather, and demand signals, increasing peak-period revenue by 23%.",
-    "Multilingual Customer Support Chatbot: Built and deployed an LLM-powered chatbot supporting 10+ Indian languages, integrated with Firebase Firestore and protected against prompt injection; achieved p95 latency <2s, eliminating manual",
-    "Document Verification System: Developed and deployed a computer vision and OCR-powered document verification system supporting multiple ID types; reduced onboarding time by ~70% and automated nearly all manual verificat.",
-    "Ride Demand Prediction System: Designed and deployed a two-stage ML pipeline combining classification and regression to forecast high-demand zones; increased driver ride fulfillment by 18% in peak-demand areas through real-time app heatmap integration."
-  ],
+      "Dynamic Surge Pricing Model: Developed and deployed a real-time surge-pricing ML service using traffic, weather, and demand signals, increasing peak-period revenue by 23%.",
+      "Multilingual Customer Support Chatbot: Built and deployed an LLM-powered chatbot supporting 10+ Indian languages, integrated with Firebase Firestore and protected against prompt injection; achieved p95 latency <2s, eliminating manual",
+      "Document Verification System: Developed and deployed a computer vision and OCR-powered document verification system supporting multiple ID types; reduced onboarding time by ~70% and automated nearly all manual verificat.",
+      "Ride Demand Prediction System: Designed and deployed a two-stage ML pipeline combining classification and regression to forecast high-demand zones; increased driver ride fulfillment by 18% in peak-demand areas through real-time app heatmap integration."
+    ],
 
   },
   {
     title: "Data Science Intern",
     company: "DataMinds Labs",
-    short_desc:"",
+    short_desc: "",
     location: "India (remote)",
     duration: "January 2025 - February 2025",
     roles: [
@@ -176,15 +193,15 @@ export const projects = [
   {
     name: "ResearchMate",
     type: "Personal Project",
-    description:"ResearchMate is an open-source, production-ready AI research assistant for document-grounded question answering. It combines a FastAPI backend, evaluated Retrieval-Augmented Generation (RAG), and optional agent workflows to deliver accurate, reliable, and transparent responses over research documents.",
+    description: "ResearchMate is an open-source, production-ready AI research assistant for document-grounded question answering. It combines a FastAPI backend, evaluated Retrieval-Augmented Generation (RAG), and optional agent workflows to deliver accurate, reliable, and transparent responses over research documents.",
     image: "/ResearchMate.png",
     liveLink: "https://researchmate.me/",
-    stacks: ["AWS", "Langchain", "Streamlit", "FastAPI","FAISS"],
+    stacks: ["AWS", "Langchain", "Streamlit", "FastAPI", "FAISS"],
   },
   {
     name: "Automatic License Plate Detection",
     type: "Personal Project",
-    description:"An automatic license plate recognition system that uses computer vision to detect and read vehicle license plates, providing automated vehicle identification for access control, parking management, and security applications.",
+    description: "An automatic license plate recognition system that uses computer vision to detect and read vehicle license plates, providing automated vehicle identification for access control, parking management, and security applications.",
     image: "/ALPR.png",
     liveLink: "https://github.com/miteshgupta07/Automatic-License-Plate-Recognition-System",
     stacks: ["Computer-Vision", "OCR", "Python"],
@@ -192,15 +209,15 @@ export const projects = [
   {
     name: "Plant Guard",
     type: "Featured Project",
-    description:"Plant Guard is a smart plant disease detection tool that uses image recognition to identify plant diseases and suggest treatments, helping gardeners and farmers keep their plants healthy.",
+    description: "Plant Guard is a smart plant disease detection tool that uses image recognition to identify plant diseases and suggest treatments, helping gardeners and farmers keep their plants healthy.",
     image: "/PlantGuard.png",
     liveLink: "https://plant-guard.streamlit.app/",
-    stacks: ["Tensorflow","Computer-Vision", "Streamlit", "Python"],
+    stacks: ["Tensorflow", "Computer-Vision", "Streamlit", "Python"],
   },
   {
     name: "SketchGen",
     type: "Personal Project",
-    description:"SketchGen is an Image-to-Image Translation tool that transforms hand-drawn sketches and prompts into realistic images using a pre-trained Stable Diffusion model.",
+    description: "SketchGen is an Image-to-Image Translation tool that transforms hand-drawn sketches and prompts into realistic images using a pre-trained Stable Diffusion model.",
     image: "/SketchGen.png",
     liveLink: "https://sketchgen.streamlit.app/",
     stacks: ["Hugging-Face", "Python", "Streamlit", "Stable-Diffusion"],
@@ -208,7 +225,7 @@ export const projects = [
   {
     name: "IntelliChat",
     type: "Personal Project",
-    description:"IntelliChat is a conversational AI chatbot with persistent history and multi-language support. Built using Streamlit, LangChain, and ChatGroq, it provides context-aware, customizable responses in five languages.",
+    description: "IntelliChat is a conversational AI chatbot with persistent history and multi-language support. Built using Streamlit, LangChain, and ChatGroq, it provides context-aware, customizable responses in five languages.",
     image: "/IntelliChat.png",
     liveLink: "https://intellichat-chatbot.streamlit.app/",
     stacks: ["Groq", "LangChain", "Python", "Streamlit"],
@@ -217,7 +234,7 @@ export const projects = [
   {
     name: "Sentiment Analysis",
     type: "Personal Project",
-    description:"A sentiment analysis system employing LSTM and CNN architectures to accurately classify and analyze sentiment from text data, providing insights into opinions and emotions expressed in various content.",
+    description: "A sentiment analysis system employing LSTM and CNN architectures to accurately classify and analyze sentiment from text data, providing insights into opinions and emotions expressed in various content.",
     image: "/Sentiment Analysis.png",
     liveLink: "https://github.com/miteshgupta07/Sentiment-Analysis-Using-CNN-and-LSTM",
     stacks: ["NLP", "Deep-Learning", "Python"],
@@ -226,15 +243,15 @@ export const projects = [
   {
     name: "CaptImage",
     type: "Personal Project",
-    description:"CAPT-IMAGE is an advanced image captioning tool that generates descriptive captions for images using deep learning techniques. It utilizes a combination of VGG16 for feature extraction and LSTM for generating meaningful captions.",
+    description: "CAPT-IMAGE is an advanced image captioning tool that generates descriptive captions for images using deep learning techniques. It utilizes a combination of VGG16 for feature extraction and LSTM for generating meaningful captions.",
     image: "CaptImage.png",
-    liveLink:"https://github.com/miteshgupta07/Capt-Image",
+    liveLink: "https://github.com/miteshgupta07/Capt-Image",
     stacks: ["Tensorflow", "CNN", "Python", "Streamlit"],
   },
   {
     name: "ATS Scoring System",
     type: "Personal Project",
-    description:"An ATS (Applicant Tracking System) scoring system that evaluates and ranks resumes based on keyword matching and relevance.",
+    description: "An ATS (Applicant Tracking System) scoring system that evaluates and ranks resumes based on keyword matching and relevance.",
     image: "/ATS.png",
     liveLink: "https://github.com/miteshgupta07/ATS-Scoring-System",
     stacks: ["NLP", "Spacy", "Python"],
@@ -242,9 +259,9 @@ export const projects = [
   {
     name: "Covid-19 Dashboard",
     type: "Personal Project",
-    description:"A Streamlit dashboard for COVID-19 reporting that provides real-time updates, visualizations, and analysis of global and local COVID-19 data to track the pandemic's progress and impact.",
+    description: "A Streamlit dashboard for COVID-19 reporting that provides real-time updates, visualizations, and analysis of global and local COVID-19 data to track the pandemic's progress and impact.",
     image: "/Covid.png",
-    liveLink:"https://covid-19-report-dashboard.streamlit.app/",
+    liveLink: "https://covid-19-report-dashboard.streamlit.app/",
     stacks: ["Streamlit", "Python", "Pandas"],
   }
 ];
