@@ -193,7 +193,7 @@ export const projects = [
   {
     name: "ResearchMate",
     type: "Personal Project",
-    description: "ResearchMate is an open-source, production-ready AI research assistant for document-grounded question answering. It combines a FastAPI backend, evaluated Retrieval-Augmented Generation (RAG), and optional agent workflows to deliver accurate, reliable, and transparent responses over research documents.",
+    description: "ResearchMate is an open-source, production-ready AI research assistant powered by Retrieval-Augmented Generation (RAG) and agentic workflows. Built with FastAPI, React, TypeScript, and PostgreSQL, it enables document-grounded conversations, contextual research, and reliable AI responses through a modern interface, with AWS deployment and CI/CD.",
     image: "/ResearchMate.png",
     liveLink: "https://researchmate.me/",
     stacks: ["AWS", "Langchain", "Streamlit", "FastAPI", "FAISS"],
